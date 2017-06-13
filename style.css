@@ -1,0 +1,72 @@
+body{
+	background-color: #296882;
+	color: #fff;
+	font-size: 16px;
+}
+main{
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+h1{
+	font-family: Goudy Old Style;
+	font-size: 40px;
+	letter-spacing: 5px;
+}
+p{
+	font-size: 20px;
+	padding: 0 2px;
+}
+.pomodoro{
+	width: 70%;
+	display: flex;
+	justify-content: space-around;
+	margin: 40px 0;
+}
+.circle{
+	flex: 1;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.circle>span{
+	width: 70%;
+	margin: 0 auto;
+	border: 3px solid #fff;
+	border-radius: 50%;
+	padding: 50px 0;
+	font-size: 50px;
+	cursor: pointer;
+}
+.breaktime, .sessiontime{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+button{
+	width: 40px;
+	height: 30px;
+	cursor: pointer;
+}
+.breaktime>span, .sessiontime>span{
+	padding: 0 12px;
+}
+@media (max-width: 1170px){
+	.pomodoro{
+		flex-direction: column;
+	}
+	.breaktime, .sessiontime{
+		justify-content: center;
+	}
+	.circle>span{
+		width: 30%;
+	}
+}
+@media (max-width: 760px){
+	.circle>span{
+		width: 50%;
+	}
+}
